@@ -79,38 +79,59 @@
         color: #aee1f9;
     }
     /* Search */
+    .search-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    }
+
     .search {
-        grid-area: search;
-        text-align: right;
-        padding: 10px 20px;
-      
-    }
-
-    .search input[type="text"] {
-        padding: 6px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-
-    /* Menu */
-    .menu {
-        grid-area: menu;
-        background: #3366cc;
-        padding: 10px;
-        text-align: center;
+        display: flex;
+        align-items: center;
         gap: 10px;
     }
 
-    .menu a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-        font-weight: bold;
+    .search-box {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: white;
+        color: #999;
+        font-size: 14px;
+        width: 200px;
     }
 
-    .menu a:hover {
-        text-decoration: underline;
-        color: yellow;
+    .search-btn {
+        background-color: #1e40af;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+        /* Menu */
+        .nav-section {
+        background-color: #1e3a8a;
+        padding: 15px 0;
+    }
+
+    .nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav span {
+        background-color: #3b82f6;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 8px 16px;
+        border-radius: 4px;
+        text-align: center;
     }
 
     /* Left (main content) */
@@ -159,6 +180,12 @@
     form input[type="submit"]:hover, form input[type="reset"]:hover {
         background: #ff6600;
     }
+    .buttons {
+        display: flex;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
 
     /* Right (sidebar) */
     .right {
@@ -216,17 +243,22 @@
         
         </div>
         <div class="header-right">
-            <div class="search">
-                <input type="text" placeholder="Search the site...">
+            <div class="search-section">
+                <div class="search">
+                    <div class="search-box">Search the site...</div>
+                    <div class="search-btn">GO</div>
+                </div>
             </div>
             <!-- Menu -->
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Promotion</a>
-                <a href="#">Gift Baskets</a>
-                <a href="#">Flower Services</a>
-                <a href="#">About</a>
+            <div class="nav-section">
+            <div class="nav">
+                <span>Home</span>
+                <span>Promotion</span>
+                <span>Gift Baskets</span>
+                <span>Flower Services</span>
+                <span>About</span>
             </div>
+        </div>
         </div>
         <!-- Search -->
         
