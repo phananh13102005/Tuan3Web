@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+    body{
+        padding: 10px;
+
+        
+    }
+    .container{
+        display: grid;
+        grid-template-areas: "menu logo"
+                             "left right"
+                             "footer footer";
+        grid-template-columns: 1fr 1fr;
+        background: linear-gradient(to bottom, #aee1f9, #4aa8e4);
+        
+        
+        padding: 20px;
+        gap: 4px;
+
+    }
+    #menu{
+        grid-area: menu;
+        background-color: linear-gradient(to bottom, #aee1f9, #4aa8e4);
+        border-bottom: 4px dotted white;
+    }
+    .logo{
+        grid-area: logo;
+        text-align: right;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 10px;
+        border-bottom: 4px dotted white;
+        background-color: linear-gradient(to bottom, #aee1f9, #4aa8e4);
+    }
+    .left{
+        grid-area: left;
+        width: auto;
+        height: auto;
+        padding: 30px;
+
+        
+    }
+    .right{
+        grid-area: right;
+        width: auto;
+        height: auto;
+        padding: 30px;
+        float: center;
+
+        
+    }
+    .right h3 p{
+        text-align: center;
+    }
+    .right img{
+        width: 100%;
+        border: 2px;
+        border-radius: 5px;
+    }
+    .footer{
+        grid-area: footer;
+        text-align: center;
+        padding: 10px;
+        font-size: 13px;
+        border-top: 4px dotted white;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        
+    }
+    li{
+        list-style-type: none;
+        padding: 15px;
+    }
+    image{
+        width: 200px;
+        height: 300px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        float: center;
+    }
+    form label{
+        font-weight: bold;
+    }
+    form input, select, textarea{
+        width: auto;
+        padding: 6px;
+        border: 2px solid blue;
+        border-radius: 3px;
+        outline: none;
+    }
+    form textarea{
+        height: 100px;
+    }
+    .buttons{
+        margin-top: 10px;
+    }
+    .buttons button{
+        border: dotted;
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 2px;
+    }
+    .quote {
+        font-size: 22px;
+        font-weight: bold;
+        color: #001f9c;
+        margin-top: 10px;
+    }
+
+    .subquote {
+            color: #154360;
+            font-style: italic;
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <div id="menu">
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+            
+        </div>
+        <div class="logo">Sky World</div>
+        <div class="left">
+            <h1>
+                Registration infomation
+            </h1>
+            <p>Start your travel planning right now with our on-line tour reistration form. Just tell us a little about yourself and you group and one of our travl experts will contact you to create the perfect package custom built for your group's needs</p>
+            <form>
+                <table>
+                    <tr>
+                        <td><label>Title</label></td>
+                        <td><select name="title" id="title">
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="ms">Ms.</option>
+                            <option value="dr">Dr.</option>
+                        </select><br>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label>Full Name *</label></td>
+                        <td><input type="text" placeholder="Full Name" required><br></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label>Mailing Address </label></td>
+                        <td><input type="text" placeholder="Mailing Address"><br></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label>City</label></td>
+                        <td><input type="text" placeholder="City"><br></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label>Country</label></td>
+                        <td><input type="text" placeholder="Country"><br></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><label>Specific questions or requests about your tour</label></td>
+                        <td><textarea placeholder="Specific questions or requests about your tour"></textarea><br></td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="buttons">
+                                <button type="submit">Submit</button>
+                                <button type="reset">Reset</button>
+                            </div>
+                        </td>
+                        
+                    </tr>
+                </table>
+                
+                
+            </form>
+        </div>
+        <div class="right">
+            <img src="./sky.png" alt="">
+            <h3 class="quote">You've arived.</h3>
+            <p class="subquote">Journeys as great as the destinations.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2016 Sky World Tours. All rights reserved.</p>
+            <p>Contact information: Student ID | Testing date: 16 Sept 2016</p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+
+</html>
